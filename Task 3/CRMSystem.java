@@ -1,4 +1,4 @@
-public class crmTask1 {
+public class CRMSystem{
     public static void main(String[] args){
         int customerId = 101;
         String firstName = "Ronald";
@@ -14,7 +14,7 @@ public class crmTask1 {
 
         int interactionId = 301;
         int relatedCustomerId = 101;
-        String interactionType = "Email";
+        String interactionType = "Email"; // Email, Call, Meeting
         String interactionDate = "2025-06-15";
         boolean isPositiveInteraction = true;
 
@@ -25,10 +25,5 @@ public class crmTask1 {
         boolean isClosed = false;
         boolean isHotOpportunity = true;
 
-        int ticketId = 501;
-        int relatedCustomerTicketId = 101;
-        String issueTitle = "Unable to login";
-        String issueDescription = "Customer cannot access the dashboard.";
-        String ticketStatus = "Open";
     }
 }
