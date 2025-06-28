@@ -1,23 +1,35 @@
 public class CRMSystem{
     public static void main(String[] args){
         int customerId = 101;
-        String firstName = "Ronald";
-        String lastName = "Jangam";
-        String email = "ronald.jangam@example.com";
-        String contactNumber = "9876543210";
+        String customerName = "Ronald Jangam";
+        double totalPurchases = 2000.00;
+        int interactionCount = 3;
 
         int leadId = 201;
-        String leadName = "Adam Parker";
-        String leadEmail = "adam.parker@gmail.com";
-        String leadPhone = "9123456789";
-        String leadSource = "Website Form";
+        double leadBudget = 4000.00;
+        boolean isContacted = false;
 
-        int opportunityId = 401;
-        int relatedLeadId = 201;
-        String opportunityName = "Java Training Contract";
-        double opportunityValue = 7500.00;
+        double opportunityValue = 6000.00;
         boolean isClosed = false;
-        boolean isHotOpportunity = true;
+
+        double avgPurchaseVal = totalPurchases/interactionCount;
+
+        System.out.println("Customer ID : " + customerId);
+        System.out.println("Customer name : " + customerName);
+        
+        if(opportunityValue>5000){
+            System.out.println("Opportunity is high value.");
+        }
+    
+        if(leadBudget > 3000 && isContacted == false){
+            System.out.println("Lead should be prioritized");
+        }
+
+        if(interactionCount>1){
+            interactionCount++;
+        }
+
+
 
     }
 }
